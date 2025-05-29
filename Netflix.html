@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .hero {
+      background: url('https://assets.nflxext.com/ffe/siteui/vlv3/8f182ca2-219e-4647-861e-f5ecfcb9a8d0/1f86a083-8d93-4fbe-9ab0-0371ec5fdc24/US-en-20240513-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      z-index: 2;
+    }
+
+    .nav img {
+      height: 40px;
+    }
+
+    .nav button {
+      background-color: #e50914;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .hero-content {
+      z-index: 2;
+      text-align: center;
+      max-width: 700px;
+      padding: 0 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero-content h2 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .email-form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .email-form input {
+      padding: 15px;
+      width: 60%;
+      max-width: 400px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .email-form button {
+      padding: 15px 25px;
+      background-color: #e50914;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .hero-content h2 {
+        font-size: 1.2rem;
+      }
+      .email-form {
+        flex-direction: column;
+        align-items: center;
+      }
+      .email-form input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="nav">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" />
+      
+      <button class="get-started-btn" onclick="window.location.href='Subscribe.html'">
+    Subscription Plans
+  </button>
+
+    </div>
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows, and more</h1>
+      <h2>Watch anywhere. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="email-form">
+
+        <form action="Netflix2.html" method="get">
+        
+        <input type="email" name="email" placeholder="Email address" size="40" required>
+  <button class="get-started-btn" type="submit">Get Started</button>
+</form>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

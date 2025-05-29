@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Your Plan - Netflix</title>
+  <style>
+
+    .netflix-next-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.next-text p {
+  max-width: 900px;
+  margin: 10px auto;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.next-text a {
+  color: #0071eb;
+  text-decoration: none;
+}
+
+.next-button {
+  margin-top: 30px;
+  background-color: #e50914;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.netflix-footer {
+  background-color: #f3f3f3;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-links {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #555;
+  text-decoration: none;
+}
+
+.language-selector {
+  margin-top: 20px;
+}
+
+.language-selector select {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 30px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .header .logo {
+      color: #e50914;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .header a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .step {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    .plans {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .plan-card {
+      border: 1px solid #444;
+      border-radius: 12px;
+      flex: 1;
+      min-width: 220px;
+      padding: 20px;
+      background: #111;
+      box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .plan-header {
+      background: linear-gradient(to right, #2e3192, #1bffff);
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .plan-card.basic .plan-header {
+      background: linear-gradient(to right, #7b2ff7, #f107a3);
+    }
+
+    .plan-card.standard .plan-header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+    }
+
+    .plan-card.premium .plan-header {
+      background: linear-gradient(to right, #f953c6, #b91d73);
+    }
+
+    .plan-card.mobile .plan-header {
+      background: linear-gradient(to right, #2193b0, #6dd5ed);
+    }
+
+    .most-popular {
+      background: #e50914;
+      color: white;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .plan-detail {
+      margin: 10px 0;
+    }
+
+    .plan-detail span {
+      display: block;
+      font-weight: bold;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">NETFLIX</div>
+    <a href="#">Sign In</a>
+  </div>
+
+  <div class="step">STEP 1 OF 4</div>
+  <h1>Choose the plan that’s right for you</h1>
+
+  <div class="plans">
+
+    <div class="plan-card premium">
+      <div class="plan-header">Premium<br><small>4K + HDR</small></div>
+      <div class="plan-detail">Monthly price <span>₹649</span></div>
+      <div class="plan-detail">Video and sound quality <span>Best</span></div>
+      <div class="plan-detail">Resolution <span>4K (Ultra HD) + HDR</span></div>
+      <div class="plan-detail">Spatial audio <span>Included</span></div>
+      <div class="plan-detail">Supported devices <span>TV, computer, mobile phone, tablet</span></div>
+      <div class="plan-detail">Devices at same time <span>4</span></div>
+      <div class="plan-detail">Download devices <span>4</span></div>
+    </div>
+
+    <div class="plan-card standard">
+      <div class="plan-header">Standard<br><small>1080p</small></div>
+      <div class="plan-detail">Monthly price <span>₹499</span></div>
+      <div class="plan-detail">Video and sound quality <span>Great</span></div>
+      <div class="plan-detail">Resolution <span>1080p (Full HD)</span></div>
+      <div class="plan-detail">Supported devices <span>TV, computer, mobile phone, tablet</span></div>
+      <div class="plan-detail">Devices at same time <span>2</span></div>
+      <div class="plan-detail">Download devices <span>2</span></div>
+    </div>
+
+    <div class="plan-card basic">
+      <div class="most-popular">Most Popular</div>
+      <div class="plan-header">Basic<br><small>720p</small></div>
+      <div class="plan-detail">Monthly price <span>₹199</span></div>
+      <div class="plan-detail">Video and sound quality <span>Good</span></div>
+      <div class="plan-detail">Resolution <span>720p (HD)</span></div>
+      <div class="plan-detail">Supported devices <span>TV, computer, mobile phone, tablet</span></div>
+      <div class="plan-detail">Devices at same time <span>1</span></div>
+      <div class="plan-detail">Download devices <span>1</span></div>
+    </div>
+
+    <div class="plan-card mobile">
+      <div class="plan-header">Mobile<br><small>480p</small></div>
+      <div class="plan-detail">Monthly price <span>₹149</span></div>
+      <div class="plan-detail">Video and sound quality <span>Fair</span></div>
+      <div class="plan-detail">Resolution <span>480p</span></div>
+      <div class="plan-detail">Supported devices <span>Mobile phone, tablet</span></div>
+      <div class="plan-detail">Devices at same time <span>1</span></div>
+      <div class="plan-detail">Download devices <span>1</span></div>
+    </div>
+
+  </div>
+
+<!-- Footer and Next Button Section -->
+<div class="netflix-next-section">
+  <div class="next-text">
+    <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href="#">Terms of Use</a> for more details.</p>
+    <p>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard, and 1 with Basic and Mobile.</p>
+    <p>Live events are included with any Netflix plan and contain ads.</p>
+  </div>
+  <button class="next-button" onclick="window.location.href='Netflix.html'">Next</button>
+</div>
+
+
+<footer class="netflix-footer">
+  <p>Questions? Call 000-800-919-1743</p>
+  <div class="footer-links">
+    <a href="#">FAQ</a>
+    <a href="#">Help Centre</a>
+    <a href="#">Terms of Use</a>
+    <a href="#">Privacy</a>
+    <a href="#">Cookie Preferences</a>
+    <a href="#">Corporate Information</a>
+  </div>
+  <div class="language-selector">
+    <select>
+      <option selected>English</option>
+      <!-- Add more languages if needed -->
+    </select>
+  </div>
+</footer>
+
+</body>
+</html>

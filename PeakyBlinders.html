@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peaky Blinders</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #141414;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .poster, .player {
+      flex: 1 1 45%;
+      min-width: 300px;
+    }
+
+    .poster img {
+      width: 100%;
+      border-radius: 16px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .poster img:hover {
+      transform: scale(1.02);
+    }
+
+    .details {
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+
+    .meta {
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .tags {
+      margin-top: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #333;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      margin-right: 10px;
+    }
+
+    .play-button {
+      background-color: #e50914;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    .video-container {
+      display: none;
+      margin-top: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border-radius: 16px;
+      border: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Poster -->
+    <div class="poster" onclick="playVideo()">
+      <img src="https://static.wikia.nocookie.net/peaky-blinders/images/0/0a/Peaky_Blinders_4.jpg/revision/latest?cb=20180110141315" alt="Movie Poster" />
+    </div>
+
+    <!-- Details -->
+    <div class="details">
+      <h1>Peaky Blinders</h1>
+      <div class="meta">2023 • Action • Drama • Historical</div>
+      <p class="description">
+        A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.
+      </p>
+      <div class="tags">
+        <span class="tag">Action</span>
+        <span class="tag">Drama</span>
+        <span class="tag">Historical</span>
+      </div>
+      <button class="play-button" onclick="playVideo()">▶ Play Trailer</button>
+
+      <!-- Video -->
+      
+
+  <div class="video-container" id="videoContainer">
+  
+    <iframe
+    id="trailer"
+    src="https://www.youtube.com/embed/Ruyl8_PT_y8?si=8spakMAZ9mFUdFpR" title="YouTube video player" 
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+  ></iframe>
+
+</div>
+
+<script>
+  function playVideo() {
+    const iframe = document.getElementById("trailer");
+    iframe.src += "?autoplay=1";
+    document.getElementById("videoContainer").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
